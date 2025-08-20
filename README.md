@@ -12,9 +12,13 @@ If you have a class that multiple professors repreasent it, You can add the clas
 
 Each class can have multiple represention.
 You can add :
+
 ```Lesson Code```
+
 ```Professor's Name```
+
 ```Day of Class```
+
 ```Start and End Time of Class```
 
 ## Usage
