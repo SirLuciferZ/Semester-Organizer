@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Vazirmatn:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>مقایسه کلاس های این ترم</title>
+  </head>
+  <body>
+    <div class="create-list">
+      <div class="class-info">
+        <input class="empty class-name-enter" type="text" placeholder="نام درس" />
+        <input class="empty class-num" type="number" placeholder="تعداد واحد" />
+      </div>
+      <input class="submit-button" type="submit" value="ثبت درس" />
+    </div>
+
+    <div class="card-container">
+      <div class="class-card">
+        <div class="card-info">
+          <p>اقتصاد</p>
+          <p>تعداد واحد : <span>3</span></p>
+
+          <p class="add-new-lesson">اضافه کردن کلاس</p>
+        </div>
+        <div class="lessons">
+          <div class="lesson-card">
+            <p>کد ارائه : <span>1045847525</span></p>
+            <p>نام استاد : <br /><span>خیده</span></p>
+            <div class="lesson-time">
+              <p>
+                دوشنبه<br />
+                16:30 تا 17
+              </p>
+            </div>
+            <p>مدت کلاس : <br /><span>0:30</span></p>
+            <img class="delete-button" src="./delete.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="add-task-popup">
+      <div class="popup-content">
+        <div class="circle-popup">
+          <img class="js-close-add-card" src="./close.svg" alt="" />
+          <div class="task-name-holder">
+            <input class="empty class-code" type="text" placeholder="کد ارائه" />
+          </div>
+        </div>
+        <div class="task-tag-holder">
+          <input class="empty master-name" type="text" placeholder="نام استاد" />
+        </div>
+        <div class="task-day-holder">
+          <input class="empty class-day" type="text" placeholder="روز کلاس" />
+        </div>
+        <div class="task-note-holder">
+            <p>از ساعت</p>
+          <input class="empty start-time" type="time" placeholder="زمان شروع" />
+        </div>
+        <div class="task-date-holder">
+            <p>تا ساعت</p>
+          <input class="empty end-time" type="time"  />
+        </div>
+
+        
+            </div>
+            <input class="add-submit" type="submit" value="اضافه کردن">
+        </div>
+    </div>
+
+    <div class="back-blur"></div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
