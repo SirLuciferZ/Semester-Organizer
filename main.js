@@ -206,31 +206,6 @@ function addNewLesson() {
     document.querySelectorAll(".empty").forEach(input => input.value = "");
 }
 
-// function renderInfoHtml() {
-
-//     let allInfoHtml = ''
-//     cardAll.forEach((item) => {
-//         const info = item.info
-//         info.forEach((info) => {
-//             const newInfo = `
-//     <div class="lesson-card">
-//       <p>کد ارائه : <br><span>${info.code}</span></p>
-//       <p>نام استاد : <br><span>${info.masterName}</span></p>
-//       <div class="lesson-time">
-//         <p>${info.day}<br> ${info.startTime} تا ${info.endTime}</p>
-//       </div>
-//       <p>مدت کلاس : <br><span>0:30</span></p>
-//       <img class="delete-button" src="./delete.svg" alt="">
-//     </div>
-//   `
-//             allInfoHtml += newInfo
-
-//         })
-
-
-//     })
-//     lessons.innerHTML = allInfoHtml;
-// }
 
 function renderInfoHtml() {
     // For each card object
@@ -249,7 +224,7 @@ function renderInfoHtml() {
       <p>مدت کلاس : <br><span>0:30</span></p>
       <img 
         class="delete-button" 
-        src="./delete.svg" 
+        src="./icons/delete.svg" 
         alt="حذف" 
         data-card-id="${item.id}" 
         data-info-index="${index}"
@@ -275,35 +250,6 @@ function renderInfoHtml() {
 }
 
 
-// function renderHtml() {
-//     let allHtml = ''
-//     cardAll.forEach((item) => {
-//         const cardHtml = `<div class="class-card">
-//                         <div class="card-info">
-//                             <p>${item.lesson}</p>
-//                             <p>تعداد واحد : <span>${item.number}</span></p>
-
-//                             <p class="add-new-lesson" data-id="${item.id}">اضافه کردن کلاس</p>
-//                         </div>
-//                         <div class="lessons">
-//                         </div>
-//                     </div>`
-//         allHtml += cardHtml
-//     })
-//     document.querySelector(".card-container").innerHTML = allHtml
-
-//     // ⬇ Re‑attach listeners to new elements
-//     document.querySelectorAll(".add-new-lesson").forEach((add) => {
-//         add.addEventListener("click", () => {
-//             showAddLesson()
-//             selectLesson(event)
-//         })
-//     })
-
-
-//     saveToStorage()
-// }
-
 function renderHtml() {
     let allHtml = '';
     cardAll.forEach((item) => {
@@ -316,7 +262,7 @@ function renderHtml() {
             <div class="delete-container">
                       <img 
             class="delete-card" 
-            src="./delete.svg" 
+            src="./icons/delete.svg" 
             alt="حذف کارت" 
             id="delete-card-id"
             data-card-id="${item.id}"
